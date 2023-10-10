@@ -47,8 +47,13 @@ public class BookingManager {
 	}
 
 	public Set<Integer> getAvailableRooms(LocalDate date) {
-		//implement this method
-		return null;
+		Set<Integer> availableRooms = new HashSet<Integer>();
+		for (Room room : rooms) {
+			if (room.checkAvailability(date)) {
+				availableRooms.add(room.getRoomNumber());
+			}
+		}
+		return availableRooms;
 	}
 
 	private static Room[] initializeRooms() {
