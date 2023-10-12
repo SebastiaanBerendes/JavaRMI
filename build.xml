@@ -17,8 +17,8 @@
 	   The third parameter is filename for the final zip.	   
     ******************************************************** -->
   <property name="main.client" value="staff.BookingClient" />
-  <property name="main.server" value="" />
-  <property name="zip.filename" value="rmi" />
+  <property name="main.server" value="hotel.BookingManager" />
+  <property name="zip.filename" value="JavaRMI" />
   <!--
     ********************************************************
        Please DO NOT CHANGE any code below this line.
